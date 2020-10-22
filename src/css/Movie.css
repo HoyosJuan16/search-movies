@@ -1,0 +1,53 @@
+.movie-page{
+  padding: 25px 0px;
+}
+.container-movie-page{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px 2px;
+  padding-right: 15px;
+}
+.movie-page-poster{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: span 10;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.movie-page-poster img{
+  width: 100%;
+  border-radius: 6px;
+  height: 100%;
+}
+.movie-page-title,
+.movie-page-genre,
+.movie-page-actors,
+.movie-page-plot{
+  grid-column: span 6;
+}
+.movie-page-year,
+.movie-page-duration{
+  grid-column: span 3;
+}
+.back-to-home{
+  grid-column-start: 9;
+  grid-column-end: 11;
+  text-align: center;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+@media(max-width:850px){
+  .container-movie-page{
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .back-to-home{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+  .movie-page-poster{
+    grid-column: span 12;
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+}

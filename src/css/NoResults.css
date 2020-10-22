@@ -1,0 +1,7 @@
+.text-result{
+  grid-column: span 12;
+  color:#000;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
